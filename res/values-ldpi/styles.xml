@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Styled" parent="@style/Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/CustomActionBarStyle</item>
+        <item name="android:actionBarStyle">@style/CustomActionBarStyle</item>
+    </style>
+
+    <style name="CustomActionBarStyle" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="titleTextStyle">@style/CustomTitleColorBar</item>
+        <item name="android:titleTextStyle">@style/CustomTitleColorBar</item>
+    </style>
+
+    <!-- Style for the color title bar -->
+    <style name="CustomTitleColorBar" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">#064650</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#064650</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SearchButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#f8ffdb</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ClearButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#064650</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:textSize">6sp</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

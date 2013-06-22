@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res\layout\activity_ambulance_details.xml" />
+        <ignore path="res\layout\activity_chemist_details.xml" />
+        <ignore path="res\layout\activity_chemist_search.xml" />
+        <ignore path="res\layout\activity_chemist_search_area.xml" />
+        <ignore path="res\layout\activity_doctor_details.xml" />
+        <ignore path="res\layout\activity_doctor_search.xml" />
+        <ignore path="res\layout\activity_doctor_search_area.xml" />
+        <ignore path="res\layout\activity_doctor_search_specialization.xml" />
+        <ignore path="res\layout\activity_hospital_details.xml" />
+        <ignore path="res\layout\activity_hospital_search.xml" />
+        <ignore path="res\layout\activity_hospital_search_area.xml" />
+        <ignore path="res\layout\activity_hospital_search_specialization.xml" />
+    </issue>
+    <issue id="DisableBaselineAlignment">
+        <ignore path="res\layout\activity_dashboard.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res\layout\activity_ambulance_details.xml" />
+        <ignore path="res\layout\activity_chemist_details.xml" />
+        <ignore path="res\layout\activity_chemist_search.xml" />
+        <ignore path="res\layout\activity_chemist_search_area.xml" />
+        <ignore path="res\layout\activity_dashboard.xml" />
+        <ignore path="res\layout\activity_doctor_details.xml" />
+        <ignore path="res\layout\activity_doctor_search.xml" />
+        <ignore path="res\layout\activity_doctor_search_area.xml" />
+        <ignore path="res\layout\activity_doctor_search_specialization.xml" />
+        <ignore path="res\layout\activity_flash.xml" />
+        <ignore path="res\layout\activity_hospital_details.xml" />
+        <ignore path="res\layout\activity_hospital_search.xml" />
+        <ignore path="res\layout\activity_hospital_search_area.xml" />
+        <ignore path="res\layout\activity_hospital_search_specialization.xml" />
+    </issue>
+    <issue id="NestedWeights">
+        <ignore path="res\layout\activity_ambulance_details.xml" />
+        <ignore path="res\layout\activity_chemist_details.xml" />
+        <ignore path="res\layout\activity_chemist_search_area.xml" />
+        <ignore path="res\layout\activity_dashboard.xml" />
+        <ignore path="res\layout\activity_doctor_details.xml" />
+        <ignore path="res\layout\activity_doctor_search_area.xml" />
+        <ignore path="res\layout\activity_doctor_search_specialization.xml" />
+        <ignore path="res\layout\activity_hospital_details.xml" />
+        <ignore path="res\layout\activity_hospital_search_area.xml" />
+        <ignore path="res\layout\activity_hospital_search_specialization.xml" />
+    </issue>
+    <issue id="Overdraw">
+        <ignore path="res\layout\activity_ambulance_details.xml" />
+    </issue>
+    <issue id="SmallSp">
+        <ignore path="res\layout\activity_doctor_details.xml" />
+    </issue>
+    <issue id="TextFields">
+        <ignore path="res\layout\activity_chemist_search_area.xml" />
+        <ignore path="res\layout\activity_doctor_search_area.xml" />
+        <ignore path="res\layout\activity_doctor_search_specialization.xml" />
+        <ignore path="res\layout\activity_hospital_search_area.xml" />
+        <ignore path="res\layout\activity_hospital_search_specialization.xml" />
+    </issue>
+    <issue id="UnusedResources">
+        <ignore path="res\layout\activity_ambulance_details.xml" />
+    </issue>
+    <issue id="UselessLeaf">
+        <ignore path="res\layout\activity_chemist_search.xml" />
+        <ignore path="res\layout\activity_dashboard.xml" />
+        <ignore path="res\layout\activity_doctor_details.xml" />
+        <ignore path="res\layout\activity_doctor_search.xml" />
+        <ignore path="res\layout\activity_hospital_search.xml" />
+    </issue>
+</lint>

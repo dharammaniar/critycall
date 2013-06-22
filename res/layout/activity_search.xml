@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#064650"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="right|bottom"
+        android:paddingRight="20dp" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/search_button_area"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical|left"
+            android:onClick="onClickArea"
+            android:singleLine="true"
+            android:text="Select Area" />
+
+        <Button
+            android:id="@+id/search_button_area_clear"
+            style="@style/ClearButtonText"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/search_button_area"
+            android:layout_alignBottom="@+id/search_button_area"
+            android:layout_alignRight="@+id/search_button_area"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_clear"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickAreaClear"
+            android:text="X"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/search_button_specialization"
+            style="@style/ButtonText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center_vertical|left"
+            android:onClick="onClickSpecialization"
+            android:singleLine="true"
+            android:text="Select Specialization"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/search_button_specialization_clear"
+            style="@style/ClearButtonText"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/search_button_specialization"
+            android:layout_alignBottom="@+id/search_button_specialization"
+            android:layout_alignRight="@+id/search_button_specialization"
+            android:layout_margin="4dp"
+            android:background="@drawable/button_clear"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClickSpecializationClear"
+            android:text="X"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/search_button_search"
+            style="@style/SearchButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_search"
+            android:clickable="true"
+            android:onClick="onClickSearch"
+            android:text="          Search          " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:id="@+id/search_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>
