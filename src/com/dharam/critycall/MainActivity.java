@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_flash);
 		final DatabaseHandler db = new DatabaseHandler(getApplicationContext());
-
+ 
 		city_list = new ArrayList<String>();
 
 		if (!isNetworkConnected()) {
