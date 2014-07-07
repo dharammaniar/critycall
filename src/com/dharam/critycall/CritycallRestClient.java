@@ -5,7 +5,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
 
 public class CritycallRestClient {
-	private static final String BASE_URL = "http://www.critycall.com/app/test/";
+	private static final String BASE_URL = "http://www.dharammaniar.com/critycall.com/app/";
 
 	  private static AsyncHttpClient client = new AsyncHttpClient();
 

@@ -201,50 +201,40 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 	public List<String> getSimilarLocations(String pattern) {
 		List<String> locationList = new ArrayList<String>();
+		// Select All Query
 		String selectQuery = "SELECT  * FROM location where location_name like '%" + pattern + "%'";
 
 		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cursor = db.rawQuery(selectQuery, null);
 
+		// looping through all rows and adding to list
 		if (cursor.moveToFirst()) {
 			do {
 				locationList.add(cursor.getString(1));
 			} while (cursor.moveToNext());
 		}
+		// return contact list
 		db.close();
 		return locationList;
 	}
 
 	public List<String> getSimilarSpecialities(String pattern) {
 		List<String> specialityList = new ArrayList<String>();
+		// Select All Query
 		String selectQuery = "SELECT  * FROM speciality where speciality_name like '%" + pattern + "%'";
 
 		SQLiteDatabase db = this.getWritableDatabase();
 		Cursor cursor = db.rawQuery(selectQuery, null);
 
+		// looping through all rows and adding to list
 		if (cursor.moveToFirst()) {
 			do {
 				specialityList.add(cursor.getString(1));
 			} while (cursor.moveToNext());
 		}
+		// return contact list
 		db.close();
 		return specialityList;
-	}
-
-	public List<String> getSimilarCities(String pattern) {
-		List<String> cityList = new ArrayList<String>();
-		String selectQuery = "SELECT  * FROM city where city_name like '%" + pattern + "%'";
-
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(selectQuery, null);
-
-		if (cursor.moveToFirst()) {
-			do {
-				cityList.add(cursor.getString(1));
-			} while (cursor.moveToNext());
-		}
-		db.close();
-		return cityList;
 	}
 
 	public Location getLocationByName(String location_name) {
@@ -282,21 +272,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		// return contact list
 		db.close();
 		return speciality;
-	}
-
-	public String getCityCdByName(String city_name) {
-		String cityCd = null;
-		// Select city_cd Query
-		String selectQuery = "SELECT city_cd FROM city where city_name = '" + city_name + "'";
-
-		SQLiteDatabase db = this.getWritableDatabase();
-		Cursor cursor = db.rawQuery(selectQuery, null);
-
-		if (cursor.moveToFirst()) {
-			cityCd = cursor.getString(0);
-		}
-		db.close();
-		return cityCd;
 	}
 
 }

@@ -58,16 +58,16 @@ public class SearchAreaActivity extends SherlockActivity implements SearchView.O
 		if (selection.equals("Doctor")) {
 			if (SearchActivity.Specialization == null) {
 
-				list = new ArrayList<String>(new HashSet<String>(DashboardActivity.doctor_location_cd_list));
+				list = new ArrayList<String>(new HashSet<String>(MainActivity.doctor_location_cd_list));
 
-			} else if (SearchActivity.Specialization.length() == 0) {
-				list = new ArrayList<String>(new HashSet<String>(DashboardActivity.doctor_location_cd_list));
+			} else if (SearchActivity.Specialization.length()==0) {
+				list = new ArrayList<String>(new HashSet<String>(MainActivity.doctor_location_cd_list));
 			} else {
 				areaList = new ArrayList<String>();
 				specialityCd = db.getSpecialityByName(SearchActivity.Specialization).getSpeciality_cd();
-				for (int i = 0; i < DashboardActivity.doctor_speciality_cd_list.size(); i++) {
-					if (specialityCd.equals(DashboardActivity.doctor_speciality_cd_list.get(i))) {
-						areaList.add(DashboardActivity.doctor_location_cd_list.get(i));
+				for (int i = 0; i < MainActivity.doctor_speciality_cd_list.size(); i++) {
+					if (specialityCd.equals(MainActivity.doctor_speciality_cd_list.get(i))) {
+						areaList.add(MainActivity.doctor_location_cd_list.get(i));
 					}
 				}
 				list = new ArrayList<String>(new HashSet<String>(areaList));
@@ -75,19 +75,19 @@ public class SearchAreaActivity extends SherlockActivity implements SearchView.O
 		}
 
 		if (selection.equals("Hospital")) {
-			list = new ArrayList<String>(new HashSet<String>(DashboardActivity.hospital_location_cd_list));
+			list = new ArrayList<String>(new HashSet<String>(MainActivity.hospital_location_cd_list));
 		}
 
 		if (selection.equals("Chemist")) {
-			list = new ArrayList<String>(new HashSet<String>(DashboardActivity.chemist_location_cd_list));
+			list = new ArrayList<String>(new HashSet<String>(MainActivity.chemist_location_cd_list));
 		}
 
 		if (selection.equals("Lab")) {
-			list = new ArrayList<String>(new HashSet<String>(DashboardActivity.lab_location_cd_list));
+			list = new ArrayList<String>(new HashSet<String>(MainActivity.lab_location_cd_list));
 		}
 
 		if (selection.equals("Ambulance")) {
-			list = new ArrayList<String>(new HashSet<String>(DashboardActivity.ambulance_location_cd_list));
+			list = new ArrayList<String>(new HashSet<String>(MainActivity.ambulance_location_cd_list));
 		}
 
 		for (int i = 0; i < list.size(); i++) {

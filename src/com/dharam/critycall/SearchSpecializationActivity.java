@@ -51,16 +51,16 @@ public class SearchSpecializationActivity extends SherlockActivity implements Se
 
 		if (SearchActivity.Area == null) {
 
-			list = new ArrayList<String>(new HashSet<String>(DashboardActivity.doctor_speciality_cd_list));
+			list = new ArrayList<String>(new HashSet<String>(MainActivity.doctor_speciality_cd_list));
 
 		} else if (SearchActivity.Area.length() == 0) {
-			list = new ArrayList<String>(new HashSet<String>(DashboardActivity.doctor_speciality_cd_list));
+			list = new ArrayList<String>(new HashSet<String>(MainActivity.doctor_speciality_cd_list));
 		} else {
 			specialityList = new ArrayList<String>();
 			areaCd = db.getLocationByName(SearchActivity.Area).getLocation_cd();
-			for (int i = 0; i < DashboardActivity.doctor_location_cd_list.size(); i++) {
-				if (areaCd.equals(DashboardActivity.doctor_location_cd_list.get(i))) {
-					specialityList.add(DashboardActivity.doctor_speciality_cd_list.get(i));
+			for (int i = 0; i < MainActivity.doctor_location_cd_list.size(); i++) {
+				if (areaCd.equals(MainActivity.doctor_location_cd_list.get(i))) {
+					specialityList.add(MainActivity.doctor_speciality_cd_list.get(i));
 				}
 			}
 			list = new ArrayList<String>(new HashSet<String>(specialityList));
